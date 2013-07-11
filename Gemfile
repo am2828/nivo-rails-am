@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in nivo-rails.gemspec
+# Specify your gem's dependencies in nivo-rails-am.gemspec
 gemspec
