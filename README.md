@@ -1,6 +1,6 @@
 # Nivo::Rails
 
-TODO: Write a gem description
+Integrating the awesome Nivo slider slideshow in Rails > 3.1
 
 ## Installation
 
@@ -18,7 +18,33 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+In .erb file, just do following:
+
+<%= nivo_slider(:theme => :dark,:id => "slider") do %>
+
+  <%= image_tag 'slider/toystory.jpg', :title => "#htmlcaption0" %>
+  <%= image_tag 'slider/walle.jpg', :title => "#htmlcaption1" %>
+  <%= image_tag 'slider/up.jpg', :title => "#htmlcaption2" %>
+  <%= image_tag 'slider/nemo.jpg', :title => "#htmlcaption3" %>
+ 
+<% end %>
+
+  
+  <div id="htmlcaption0" class="nivo-html-caption">
+  <strong><bold>Toy Movie</bold></strong> needs <em>backers</em> click <a href="#">link</a> 
+  </div>
+  <div id="htmlcaption1" class="nivo-html-caption">
+  <strong><bold>Robot Movie</bold></strong> needs <em>backers</em> click <a href="#">link</a> 
+  </div>
+  <div id="htmlcaption2" class="nivo-html-caption">
+  <strong><bold>Flying Grandpa Movie</bold></strong> needs <em>backers</em> click <a href="#">link</a> 
+  </div>
+  <div id="htmlcaption3" class="nivo-html-caption">
+  <strong><bold>Fish and Bird Movie</bold></strong> needs <em>backers</em> click <a href="#">link</a> 
+  </div>
+
+<%= javascript_include_tag 'slider/init.nivo.slider' %> 
+
 
 ## Contributing
 
